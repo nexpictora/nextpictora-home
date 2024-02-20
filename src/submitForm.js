@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var subject = 'New Enquiry';
         var body = 'Name: ' + name + '\nEmail: ' + email;
 
-        var mailtoLink = 'mailto:nexpictora2023@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        var mailtoLink = 'mailto:support@nexpictora.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 
         window.location.href = mailtoLink;
     }
