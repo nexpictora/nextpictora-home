@@ -42,14 +42,20 @@
     <meta property="og:url" content="https://www.nexpictora.com" />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://www.nexpictora.com" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-    <meta name="author" content="NexPictora">
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large"
+    />
+    <meta name="author" content="NexPictora" />
     <title>
       NexPictora - Elevate Your Business | Software Development & Innovation
     </title>
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <script>
       tailwind.config = {
         theme: {
@@ -280,11 +286,11 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#products">
-          <button
-            class="inline-flex items-center justify-center px-4 py-2 rounded-full border border-brand-dark text-white font-medium hover:border-brand transition-colors"
-          >
-            Learn more
-          </button>
+            <button
+              class="inline-flex items-center justify-center px-4 py-2 rounded-full border border-brand-dark text-white font-medium hover:border-brand transition-colors"
+            >
+              Learn more
+            </button>
           </a>
           <!-- <button
             class="inline-flex items-center px-6 py-3 rounded-md border border-subtle text-muted hover:text-white hover:border-white transition-colors"
@@ -614,7 +620,7 @@
               >
                 <i class="fas fa-exclamation-triangle mr-2"></i
                 ><span id="errorText"></span>
-              </div hed1>
+              </div>
             </div>
           </div>
         </div>
@@ -705,16 +711,10 @@
           </div>
         </div>
         <div class="border-t border-subtle pt-8 text-center">
-          <p class="text-sm text-muted">
-            Made with 🩵 by NexPictora
-          </p>
+          <p class="text-sm text-muted">Made with 🩵 by NexPictora</p>
         </div>
       </div>
     </footer>
-
-    <!-- Load confetti library (corrected to browser-compatible version) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.6.0/confetti.browser.min.js"></script>
-
     <script>
       // Configuration
       const SUPABASE_URL = "https://xwbtgpbksnvrqurmcuqe.supabase.co";
@@ -805,18 +805,6 @@
               successMsg.classList.remove("hidden");
               errorMsg.classList.add("hidden");
               document.getElementById("contactForm").reset();
-
-              // Confetti effect with brand colors
-              if (typeof confetti === "function") {
-                confetti({
-                  particleCount: 100,
-                  spread: 70,
-                  origin: { y: 0.6 },
-                  colors: ["#44A9F7", "#2E7BC6", "#6BB8F9", "#ffffff"],
-                });
-              } else {
-                console.warn("Confetti library not loaded");
-              }
             } else {
               throw new Error("Failed to submit form");
             }
