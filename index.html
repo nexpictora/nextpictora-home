@@ -838,10 +838,8 @@
       </div>
     </footer>
     <script>
-      // Configuration
-      const SUPABASE_URL = "https://xwbtgpbksnvrqurmcuqe.supabase.co";
-      const SUPABASE_ANON_KEY =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh3YnRncGJrc252cnF1cm1jdXFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYzODYxNDEsImV4cCI6MjA2MTk2MjE0MX0.cv3uRwvcK1_5YZzCU7hh34dmuDO6qSzOPOJeBe1-Yd4";
+      const WORKER_URL =
+        "https://nexpictora-signups.nexpictora2023.workers.dev";
 
       // Mobile menu toggle
       document
@@ -878,64 +876,75 @@
           const errorMsg = document.getElementById("errorMessage");
           const errorText = document.getElementById("errorText");
 
+          // Basic client-side validation
           if (!name || !email) {
             showError("Please fill in both Name and Email fields.");
             return;
           }
 
-          // Check if email already submitted (localStorage check)
+          // Email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            showError("Please enter a valid email address.");
+            return;
+          }
+
+          // Check if email already submitted (localStorage check for better UX)
           const submittedEmails = JSON.parse(
             localStorage.getItem("submittedEmails") || "[]"
           );
-          if (submittedEmails.includes(email)) {
+          if (submittedEmails.includes(email.toLowerCase())) {
             showError(
               "This email has already been submitted. Thank you for your interest!"
             );
             return;
           }
 
+          // Update button state
           submitBtn.disabled = true;
           submitBtn.innerHTML =
             '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
 
           try {
-            // Supabase API call
-            const response = await fetch(`${SUPABASE_URL}/rest/v1/contacts`, {
+            // Call Cloudflare Worker API
+            const response = await fetch(WORKER_URL, {
               method: "POST",
               headers: {
-                apikey: SUPABASE_ANON_KEY,
-                Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
                 "Content-Type": "application/json",
               },
               body: JSON.stringify({
                 name: name,
                 email: email,
                 message: message,
-                created_at: new Date().toISOString(),
               }),
             });
 
-            if (response.ok) {
-              // Store email in localStorage
-              submittedEmails.push(email);
+            const result = await response.json();
+
+            if (result.success) {
+              // Store email in localStorage to prevent duplicate submissions
+              submittedEmails.push(email.toLowerCase());
               localStorage.setItem(
                 "submittedEmails",
                 JSON.stringify(submittedEmails)
               );
 
-              // Show success
+              // Show success message
               successMsg.classList.remove("hidden");
               errorMsg.classList.add("hidden");
               document.getElementById("contactForm").reset();
             } else {
-              throw new Error("Failed to submit form");
+              showError(
+                result.error || "Failed to send message. Please try again."
+              );
             }
           } catch (error) {
-            console.error("Error:", error);
+            console.error("Network error:", error);
             showError(
-              "Failed to send message. Please try again or contact us directly at support@nexpictora.com"
+              "Network error. Please check your connection and try again, or contact us directly at support@nexpictora.com"
             );
           } finally {
+            // Reset button state
             submitBtn.disabled = false;
             submitBtn.innerHTML = "Send Message";
           }
