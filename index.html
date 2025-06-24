@@ -1,39 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TTHFH5F5');</script>
-<!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TTHFH5F5");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="description" content="Transforming businesses with cutting-edge solutions for enhanced profitability and online presence. We expanding range of products promises to revolutionize B2B & B2C interactions. Join us in making local businesses more accessible in the digital landscape."/>
-    <meta name="google-site-verification" content="54heLKbT5Y5fKKP90ZQda33zd8_QHVK_oq7fZdBd2q4" />
-    <meta property="og:title" content="NexPictora - Elevate Your Business"/>
-    <meta property="og:description" content="Transforming businesses with cutting-edge solutions for enhanced profitability and online presence."/>
-    <meta property="og:image" content="https://www.nexpictora.com/img/logo.png"/>
-    <meta property="og:url" content="https://www.nexpictora.com"/>
-    <meta property="og:type" content="website"/>
-    <meta property="description" content="Transforming businesses with cutting-edge solutions for enhanced profitability and online presence. Our B2B expertise empowers enterprises, while our expanding range of products promises to revolutionize B2C interactions. Join us in making local businesses more accessible and thriving in the digital landscape." />
-    <link rel="canonical" href="https://www.nexpictora.com"/>
-    <title>NexPictora - Elevate Your Business</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NexPictora - Transforming businesses with cutting-edge solutions. Software development, web development, backend development, mobile app development, Smaapi, and business automation solutions."
+    />
+    <meta
+      name="keywords"
+      content="software development, web development, backend development, mobile app development, API builder, Smaapi, business automation, NexPictora"
+    />
+    <meta
+      name="google-site-verification"
+      content="54heLKbT5Y5fKKP90ZQda33zd8_QHVK_oq7fZdBd2q4"
+    />
+    <meta property="og:title" content="NexPictora - Elevate Your Business" />
+    <meta
+      property="og:description"
+      content="Transforming businesses with cutting-edge solutions for enhanced profitability and online presence."
+    />
+    <meta
+      property="og:image"
+      content="https://www.nexpictora.com/img/logo.png"
+    />
+    <meta property="og:url" content="https://www.nexpictora.com" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://www.nexpictora.com" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="NexPictora">
+    <title>
+      NexPictora - Elevate Your Business | Software Development & Innovation
+    </title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#44A9F7",
+              "brand-dark": "#2E7BC6",
+              "brand-light": "#6BB8F9",
+            },
+            animation: {
+              "fade-in": "fadeIn 0.5s ease-in-out",
+              "slide-up": "slideUp 0.5s ease-out",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/img/site.webmanifest">
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
@@ -43,149 +110,742 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "name": "NexPictora",
         "url": "https://www.nexpictora.com",
         "logo": "https://www.nexpictora.com/img/logo.png",
-        "description": "NexPictora: Innovate, Elevate, and Confide the Journey. Transforming businesses with cutting-edge solutions for enhanced profitability and online presence.",
+        "description": "NexPictora: Innovate, Elevate, and Confide the Journey. Transforming businesses with cutting-edge solutions for software development, web development, backend development, and mobile app development.",
         "contactPoint": {
           "@type": "ContactPoint",
           "email": "support@nexpictora.com",
           "contactType": "Customer service"
         },
-        "sameAs": [
-          "https://www.linkedin.com/company/nexpictora"
+        "sameAs": ["https://www.linkedin.com/company/nexpictora"],
+        "offers": [
+          {
+            "@type": "Service",
+            "name": "Software Development",
+            "description": "Custom software solutions tailored to business requirements"
+          },
+          {
+            "@type": "Service",
+            "name": "Web Development",
+            "description": "Modern, responsive websites and web applications"
+          },
+          {
+            "@type": "Service",
+            "name": "Backend Development",
+            "description": "Robust server-side solutions and API development"
+          },
+          {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "Native and cross-platform mobile applications"
+          }
         ]
       }
-      </script>
-    
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTHFH5F5"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  <!--Main Navigation-->
-  <!-- <header> -->
-    <!-- Intro settings -->
+    </script>
+
     <style>
-      /* Default height for small devices */
-      #intro {
-        height: 600px;
-        /* Margin to fix overlapping fixed navbar */
-        margin-top: 58px;
+      .border-subtle {
+        border-color: rgba(255, 255, 255, 0.05);
       }
-      @media (max-width: 991px) {
-              #intro {
-              /* Margin to fix overlapping fixed navbar */
-              margin-top: 45px;
-      	}
+      .bg-card {
+        background-color: #0a0a0a;
+      }
+      .bg-muted {
+        background-color: #141414;
+      }
+      .text-muted {
+        color: #888888;
+      }
+      .hero-pattern {
+        background-image: radial-gradient(
+          circle at 1px 1px,
+          rgba(68, 169, 247, 0.1) 1px,
+          transparent 0
+        );
+        background-size: 40px 40px;
       }
     </style>
-    <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" aria-label="NexPictora Home Page" target="_blank" href="https://nexpictora.com">
-          <img src="img/logo.png" height="46" alt="nexpictora-logo" loading="lazy"
-            style="margin-top: -3px;" />
-        </a>
-        
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav me-auto mb-0 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-label="Intro Page" aria-current="page" href="#intro">Home</a>
-            </li>
-          </ul>
+  </head>
+  <body class="bg-black text-white antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TTHFH5F5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
 
-          <ul class="navbar-nav d-flex flex-row">
-            <li class="nav-item me-3 me-lg-0">
-
-              </a>
-            </li>
-          </ul>
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 top-0 bg-black/80 backdrop-blur-md border-b border-subtle"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <img src="img/logo.png" alt="NexPictora Logo" class="h-8" />
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >About</a
+            >
+            <a
+              href="#products"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >Products</a
+            >
+            <a
+              href="#services"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >Services</a
+            >
+            <a
+              href="#contact"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button id="mobile-menu-btn" class="text-muted hover:text-brand">
+              <i class="fas fa-bars text-lg"></i>
+            </button>
+          </div>
         </div>
-      </div>
-<div class="d-flex flex-row-reverse justify-content-between align-items-md-end" style="width: 100%; ">
-    <a class="navbar-brand d-lg-none" aria-label="NexPictora Github Page" style=" margin-top: -10%;" href="https://github.com/nexpictora-pvt-ltd" rel="nofollow" target="_blank">
-      <i class="fab fa-github" style="font-size: 30px; align-self: center;"></i>
-    </a>
-    <a class="navbar-brand d-none d-lg-block" href="https://github.com/nexpictora-pvt-ltd" rel="nofollow" target="_blank">
-      <i class="fab fa-github" style="font-size: 30px; justify-self: center;"></i>
-    </a>
-  </div>
-  
-    </nav>
-    <!-- Navbar -->
-    </header>
-    <!-- Background image -->
-    <main>
-    <div id="intro" class="p-5 text-center bg-image shadow-1-strong"
-      style="background-image: url('https://starregistration.net/media/wysiwyg/Constellations/Pictor.png');">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white px-4" data-mdb-theme="dark">
-            <h1 class="mb-3" style="font-size: 2.5rem;">Coming Very Soon!</h1>
-            <h1 style="font-size: 1.4rem;">Join us in making local businesses more accessible and thriving in the digital landscape.</h1>
-            <!-- Time Counter -->
-            <h3 id="time-counter" class="border border-light my-4 p-4"> Innovate, Elevate and Confide the Journey</h3>
-
-            <h2 style="font-size: 1.5rem; margin-bottom: 40px; margin-top: 40px;">We're working hard to finish the development of Some Exciting Things!</h2>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden pb-4 border-t border-subtle mt-4"
+        >
+          <div class="flex flex-col space-y-4 pt-4">
+            <a
+              href="#home"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >About</a
+            >
+            <a
+              href="#products"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >Products</a
+            >
+            <a
+              href="#services"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >Services</a
+            >
+            <a
+              href="#contact"
+              class="text-sm font-medium text-muted hover:text-brand transition-colors"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- Background image -->
-  <!-- </header> -->
-  <!--Main Navigation-->
+    </nav>
 
-  <!--Main layout-->
-  <div class="mt-5">
-    <div class="container">
-      <section>
-        <div class="row">
-          <div class="col-md-6 gx-5 mb-4 d-lg-flex align-items-center">
-            <div>
-              <h4><strong>Please feel free to reach out to us via email for any inquiries or assistance. </strong></h4>
-              <p class="text-muted">
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center relative hero-pattern"
+    >
+      <div class="text-center px-4 max-w-5xl mx-auto animate-fade-in">
+        <div
+          class="inline-flex items-center px-3 py-1 rounded-full bg-muted border border-subtle mb-8"
+        >
+          <span class="text-xs font-medium text-brand">Coming Very Soon</span>
+        </div>
+        <h1
+          class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight"
+        >
+          Innovate, Elevate and
+          <span class="text-brand">Confide</span> the Journey
+        </h1>
+        <p
+          class="text-lg md:text-xl text-muted mb-12 max-w-3xl mx-auto leading-relaxed"
+        >
+          Join us in making local businesses more accessible and thriving in the
+          digital landscape. We're working hard to finish the development of
+          some exciting things.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#products">
+          <button
+            class="inline-flex items-center justify-center px-4 py-2 rounded-full border border-brand-dark text-white font-medium hover:border-brand transition-colors"
+          >
+            Learn more
+          </button>
+          </a>
+          <!-- <button
+            class="inline-flex items-center px-6 py-3 rounded-md border border-subtle text-muted hover:text-white hover:border-white transition-colors"
+          >
+            <i class="fas fa-play mr-2"></i>
+            Learn More
+          </button> -->
+        </div>
+      </div>
+    </section>
 
-              </p>
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-muted">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">About NexPictora</h2>
+          <p class="text-lg text-muted max-w-3xl mx-auto">
+            We are passionate about transforming businesses with cutting-edge
+            solutions that enhance profitability and establish a strong online
+            presence.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-card p-8 rounded-lg border border-subtle hover:border-brand/20 transition-all group"
+          >
+            <div
+              class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand/20 transition-colors"
+            >
+              <i class="fas fa-rocket text-brand text-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+            <p class="text-muted leading-relaxed">
+              Cutting-edge technology solutions that drive business growth and
+              digital transformation.
+            </p>
+          </div>
+          <div
+            class="bg-card p-8 rounded-lg border border-subtle hover:border-brand/20 transition-all group"
+          >
+            <div
+              class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand/20 transition-colors"
+            >
+              <i class="fas fa-chart-line text-brand text-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Excellence</h3>
+            <p class="text-muted leading-relaxed">
+              Delivering high-quality solutions that exceed expectations and
+              create lasting value.
+            </p>
+          </div>
+          <div
+            class="bg-card p-8 rounded-lg border border-subtle hover:border-brand/20 transition-all group"
+          >
+            <div
+              class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand/20 transition-colors"
+            >
+              <i class="fas fa-handshake text-brand text-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Partnership</h3>
+            <p class="text-muted leading-relaxed">
+              Building long-term relationships with our clients through trust
+              and reliable support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Products</h2>
+          <p class="text-lg text-muted">
+            Innovative solutions designed to revolutionize business operations
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div
+            class="bg-card p-8 rounded-lg border border-subtle hover:border-brand/20 transition-all"
+          >
+            <div class="flex items-start justify-between mb-6">
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 bg-brand/10 rounded-lg flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-code text-brand"></i>
+                </div>
+                <h3 class="text-2xl font-bold">Smaapi</h3>
+              </div>
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-500/10 text-yellow-500 border border-yellow-500/20"
+              >
+                In Development
+              </span>
+            </div>
+            <p class="text-muted mb-6 leading-relaxed">
+              Revolutionary no-code API builder with relational database-first
+              approach. Create powerful, scalable APIs without GraphQL
+              complexity, ensuring faster performance and actionable business
+              insights.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center text-sm">
+                <i class="fas fa-check text-brand mr-3 text-xs"></i>
+                <span class="text-muted">No-code API development</span>
+              </div>
+              <div class="flex items-center text-sm">
+                <i class="fas fa-check text-brand mr-3 text-xs"></i>
+                <span class="text-muted">Relational database optimization</span>
+              </div>
+              <div class="flex items-center text-sm">
+                <i class="fas fa-check text-brand mr-3 text-xs"></i>
+                <span class="text-muted">Built-in analytics and insights</span>
+              </div>
+              <div class="flex items-center text-sm">
+                <i class="fas fa-check text-brand mr-3 text-xs"></i>
+                <span class="text-muted">High-performance architecture</span>
+              </div>
             </div>
           </div>
-
-          <div class="col-md-6 gx-5 mb-4">
-            <form>
-              <div  style="border: 2px solid lightgrey; border-radius: 5px; margin-bottom: 20px;">
-                <input type="text" id="form5Example1" class="form-control" placeholder="Name"/>
-                <!-- <label class="form-label" for="form5Example1"></label> -->
+          <div
+            class="bg-card p-8 rounded-lg border border-subtle hover:border-brand/20 transition-all"
+          >
+            <div class="flex items-start justify-between mb-6">
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 bg-brand/10 rounded-lg flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-shopping-cart text-brand"></i>
+                </div>
+                <h3 class="text-2xl font-bold">Local Business Suite</h3>
               </div>
-
-              <div style="border: 2px solid lightgrey; border-radius: 5px; margin-bottom: 20px;" >
-                <input type="email" id="form5Example2" class="form-control" placeholder="Email" />
-                <!-- <label class="form-label" for="form5Example2" aria-placeholder="Email"></label> -->
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-brand/10 text-brand border border-brand/20"
+              >
+                Coming Soon
+              </span>
+            </div>
+            <p class="text-muted mb-6 leading-relaxed">
+              Complete ordering system and CRM solution empowering local
+              businesses to establish strong online presence and effectively
+              sell products and services in the digital marketplace.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center text-sm">
+                <i class="fas fa-check text-brand mr-3 text-xs"></i>
+                <span class="text-muted">Online ordering system</span>
               </div>
-
-              <button type="submit" class="btn btn-primary btn-block mb-4" data-mdb-ripple-init>
-                Send 
-              </button>
-            </form>
+              <div class="flex items-center text-sm">
+                <i class="fas fa-check text-brand mr-3 text-xs"></i>
+                <span class="text-muted">Customer relationship management</span>
+              </div>
+              <div class="flex items-center text-sm">
+                <i class="fas fa-check text-brand mr-3 text-xs"></i>
+                <span class="text-muted">Inventory management</span>
+              </div>
+              <div class="flex items-center text-sm">
+                <i class="fas fa-check text-brand mr-3 text-xs"></i>
+                <span class="text-muted">Digital storefront</span>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
-  </div>
-</main>
-  <footer class="bg-light text-lg-start">
-    <div class="py-4 text-center">
+      </div>
+    </section>
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); justify-content: end;">
-      NexPictora
-      <a class="text-dark" >2023© All rights reserved</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!--Footer-->
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-muted">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <p class="text-lg text-muted">
+            Comprehensive development solutions for your business transformation
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-card p-6 rounded-lg border border-subtle hover:border-brand/20 transition-all group"
+          >
+            <div
+              class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand/20 transition-colors"
+            >
+              <i class="fas fa-laptop-code text-brand text-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Software Development</h3>
+            <p class="text-muted text-sm leading-relaxed">
+              Custom enterprise software solutions tailored to your specific
+              business requirements and workflows
+            </p>
+          </div>
+          <div
+            class="bg-card p-6 rounded-lg border border-subtle hover:border-brand/20 transition-all group"
+          >
+            <div
+              class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand/20 transition-colors"
+            >
+              <i class="fas fa-globe text-brand text-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Web Development</h3>
+            <p class="text-muted text-sm leading-relaxed">
+              Modern, responsive websites and progressive web applications built
+              with cutting-edge technologies
+            </p>
+          </div>
+          <div
+            class="bg-card p-6 rounded-lg border border-subtle hover:border-brand/20 transition-all group"
+          >
+            <div
+              class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand/20 transition-colors"
+            >
+              <i class="fas fa-server text-brand text-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Backend Development</h3>
+            <p class="text-muted text-sm leading-relaxed">
+              Robust, scalable server-side solutions, API development, and cloud
+              infrastructure management
+            </p>
+          </div>
+          <div
+            class="bg-card p-6 rounded-lg border border-subtle hover:border-brand/20 transition-all group"
+          >
+            <div
+              class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand/20 transition-colors"
+            >
+              <i class="fas fa-mobile-alt text-brand text-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Mobile App Development</h3>
+            <p class="text-muted text-sm leading-relaxed">
+              Native iOS/Android and cross-platform mobile applications for
+              enhanced user engagement
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script type="text/javascript" src="src/submitForm.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+          <p class="text-lg text-muted">
+            Ready to transform your business? Let's start the digital
+            transformation journey together.
+          </p>
+        </div>
+        <div class="bg-card rounded-lg border border-subtle overflow-hidden">
+          <div class="md:flex">
+            <div class="md:w-1/2 p-8 bg-muted">
+              <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+              <div class="space-y-6">
+                <div class="flex items-center">
+                  <div
+                    class="w-10 h-10 bg-brand/10 rounded-lg flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-envelope text-brand text-sm"></i>
+                  </div>
+                  <span class="text-muted">support@nexpictora.com</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-10 h-10 bg-brand/10 rounded-lg flex items-center justify-center mr-4"
+                  >
+                    <i class="fab fa-linkedin text-brand text-sm"></i>
+                  </div>
+                  <a
+                    href="https://www.linkedin.com/company/nexpictora"
+                    class="text-muted hover:text-brand transition-colors"
+                    >LinkedIn Company</a
+                  >
+                </div>
+              </div>
+              <div class="mt-8 p-4 bg-card rounded-lg border border-subtle">
+                <p class="text-xs text-muted">
+                  We would love to hear about your.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-8">
+              <form id="contactForm" class="space-y-6">
+                <div>
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    class="w-full px-4 py-3 bg-muted border border-subtle rounded-md focus:ring-2 focus:ring-brand focus:border-transparent text-white placeholder-gray-500 transition-all"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    class="w-full px-4 py-3 bg-muted border border-subtle rounded-md focus:ring-2 focus:ring-brand focus:border-transparent text-white placeholder-gray-500 transition-all"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="w-full px-4 py-3 bg-muted border border-subtle rounded-md focus:ring-2 focus:ring-brand focus:border-transparent text-white placeholder-gray-500 transition-all"
+                    placeholder="Tell us about your project, ideas, or questions—we're here to help!"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  id="submitBtn"
+                  class="w-full bg-brand text-white py-3 px-6 rounded-md hover:bg-brand-dark transition-all font-medium"
+                >
+                  Send Message
+                </button>
+              </form>
+              <div
+                id="successMessage"
+                class="hidden mt-4 p-4 bg-green-500/10 text-green-500 rounded-md border border-green-500/20"
+              >
+                <i class="fas fa-check-circle mr-2"></i>Thank you! Your message
+                has been sent successfully.
+              </div>
+              <div
+                id="errorMessage"
+                class="hidden mt-4 p-4 bg-red-500/10 text-red-500 rounded-md border border-red-500/20"
+              >
+                <i class="fas fa-exclamation-triangle mr-2"></i
+                ><span id="errorText"></span>
+              </div hed1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Footer -->
+    <footer class="bg-muted border-t border-subtle py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <img src="img/logo.png" alt="NexPictora Logo" class="h-8 mb-4" />
+            <p class="text-sm text-muted">
+              Transforming businesses with cutting-edge solutions for enhanced
+              profitability and online presence.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Products</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="#products"
+                  class="text-muted hover:text-brand transition-colors"
+                  >Smaapi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-muted hover:text-brand transition-colors"
+                  >Local Business Suite</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Services</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="#services"
+                  class="text-muted hover:text-brand transition-colors"
+                  >Software Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-muted hover:text-brand transition-colors"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-muted hover:text-brand transition-colors"
+                  >Backend Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-muted hover:text-brand transition-colors"
+                  >Mobile App Development</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4 text-white">Connect</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="#contact"
+                  class="text-muted hover:text-brand transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/nexpictora"
+                  class="text-muted hover:text-brand transition-colors"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-subtle pt-8 text-center">
+          <p class="text-sm text-muted">
+            Made with 🩵 by NexPictora
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Load confetti library (corrected to browser-compatible version) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.6.0/confetti.browser.min.js"></script>
+
+    <script>
+      // Configuration
+      const SUPABASE_URL = "https://xwbtgpbksnvrqurmcuqe.supabase.co";
+      const SUPABASE_ANON_KEY =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh3YnRncGJrc252cnF1cm1jdXFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYzODYxNDEsImV4cCI6MjA2MTk2MjE0MX0.cv3uRwvcK1_5YZzCU7hh34dmuDO6qSzOPOJeBe1-Yd4";
+
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            // Close mobile menu if open
+            document.getElementById("mobile-menu").classList.add("hidden");
+          }
+        });
+      });
+
+      // Form handling
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const message = document.getElementById("message").value.trim();
+          const submitBtn = document.getElementById("submitBtn");
+          const successMsg = document.getElementById("successMessage");
+          const errorMsg = document.getElementById("errorMessage");
+          const errorText = document.getElementById("errorText");
+
+          if (!name || !email) {
+            showError("Please fill in both Name and Email fields.");
+            return;
+          }
+
+          // Check if email already submitted (localStorage check)
+          const submittedEmails = JSON.parse(
+            localStorage.getItem("submittedEmails") || "[]"
+          );
+          if (submittedEmails.includes(email)) {
+            showError(
+              "This email has already been submitted. Thank you for your interest!"
+            );
+            return;
+          }
+
+          submitBtn.disabled = true;
+          submitBtn.innerHTML =
+            '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+
+          try {
+            // Supabase API call
+            const response = await fetch(`${SUPABASE_URL}/rest/v1/contacts`, {
+              method: "POST",
+              headers: {
+                apikey: SUPABASE_ANON_KEY,
+                Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                name: name,
+                email: email,
+                message: message,
+                created_at: new Date().toISOString(),
+              }),
+            });
+
+            if (response.ok) {
+              // Store email in localStorage
+              submittedEmails.push(email);
+              localStorage.setItem(
+                "submittedEmails",
+                JSON.stringify(submittedEmails)
+              );
+
+              // Show success
+              successMsg.classList.remove("hidden");
+              errorMsg.classList.add("hidden");
+              document.getElementById("contactForm").reset();
+
+              // Confetti effect with brand colors
+              if (typeof confetti === "function") {
+                confetti({
+                  particleCount: 100,
+                  spread: 70,
+                  origin: { y: 0.6 },
+                  colors: ["#44A9F7", "#2E7BC6", "#6BB8F9", "#ffffff"],
+                });
+              } else {
+                console.warn("Confetti library not loaded");
+              }
+            } else {
+              throw new Error("Failed to submit form");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            showError(
+              "Failed to send message. Please try again or contact us directly at support@nexpictora.com"
+            );
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = "Send Message";
+          }
+
+          function showError(message) {
+            errorText.textContent = message;
+            errorMsg.classList.remove("hidden");
+            successMsg.classList.add("hidden");
+          }
+        });
+
+      // Add scroll effect to navbar
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 100) {
+          nav.classList.add("backdrop-blur-md");
+        } else {
+          nav.classList.remove("backdrop-blur-md");
+        }
+      });
+    </script>
+  </body>
 </html>
