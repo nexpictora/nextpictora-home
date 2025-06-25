@@ -325,6 +325,11 @@
         animation-delay: 12s;
       }
 
+      .backdrop-blur-grayscale {
+        backdrop-filter: blur(10px) grayscale(100%);
+        -webkit-backdrop-filter: blur(10px) grayscale(100%);
+      }
+
       @keyframes shootingStar {
         0% {
           transform: translate(0, 0);
@@ -356,7 +361,7 @@
 
     <!-- Navigation -->
     <nav
-      class="fixed w-full z-50 top-0 bg-black/80 backdrop-blur-md border-b border-gray-900"
+      class="fixed w-full z-50 top-0 bg-black/80 backdrop-blur-grayscale border-b border-gray-900"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
